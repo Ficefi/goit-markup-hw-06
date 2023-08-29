@@ -39,17 +39,27 @@
             </li>
           </ul>
         </nav>
+        <button
+          class="phone-menu js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg class="icon-menu" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <address class="info">
           <ul class="info-list list">
             <li>
-              <a href="mailto:info@devstudio.com" class="info-style link"
-                >info@devstudio.com</a
-              >
+              <a href="mailto:info@devstudio.com" class="info-style link">
+                info@devstudio.com
+              </a>
             </li>
             <li>
-              <a href="tel:+110001111111" class="info-style link"
-                >+11 (000) 111-11-11</a
-              >
+              <a href="tel:+110001111111" class="info-style link">
+                +11 (000) 111-11-11
+              </a>
             </li>
           </ul>
         </address>
@@ -57,7 +67,7 @@
     </header>
     <main>
       <section class="sect-first">
-        <div class="container">
+        <div class="sect-first-container container">
           <h1 class="solution">Effective Solutions for Your Business</h1>
           <button type="button" class="btn" data-modal-open>
             Order Service
@@ -66,11 +76,11 @@
       </section>
 
       <section class="sect-second">
-        <div class="container">
+        <div class="sect-second-container container">
           <h2 class="visually-hidden">Bla-Bla</h2>
           <ul class="features-list list">
             <li class="features-element">
-              <div class="sect-second-icons">
+              <div class="sect-second-icons desktop-visible">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -82,7 +92,7 @@
               </p>
             </li>
             <li class="features-element">
-              <div class="sect-second-icons">
+              <div class="sect-second-icons desktop-visible">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -95,7 +105,7 @@
             </li>
 
             <li class="features-element">
-              <div class="sect-second-icons">
+              <div class="sect-second-icons desktop-visible">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -107,7 +117,7 @@
               </p>
             </li>
             <li class="features-element">
-              <div class="sect-second-icons">
+              <div class="sect-second-icons desktop-visible">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -127,7 +137,8 @@
           <ul class="images-list list">
             <li class="image">
               <img
-                src="./images/img1.jpg"
+                srcset="./images/what/img1.jpg 1x, ./images/what/img1@2x.jpg 2x"
+                src="./images/what/img1.jpg"
                 alt="Apple iMac"
                 width="360"
                 height="300"
@@ -135,7 +146,8 @@
             </li>
             <li class="image">
               <img
-                src="./images/img2.jpg"
+                srcset="./images/what/img2.jpg 1x, ./images/what/img2@2x.jpg 2x"
+                src="./images/what/img2.jpg"
                 alt="Structure app"
                 width="360"
                 height="300"
@@ -143,7 +155,8 @@
             </li>
             <li class="image">
               <img
-                src="./images/img3.jpg"
+                srcset="./images/what/img3.jpg 1x, ./images/what/img3@2x.jpg 2x"
+                src="./images/what/img3.jpg"
                 alt="Adaptation on phone"
                 width="360"
                 height="300"
@@ -158,7 +171,11 @@
           <ul class="person-list list">
             <li class="list-back">
               <img
-                src="./images/person.jpg"
+                srcset="
+                  ./images/team/person.jpg    1x,
+                  ./images/team/person@2x.jpg 2x
+                "
+                src="./images/team/person.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -202,7 +219,11 @@
             </li>
             <li class="list-back">
               <img
-                src="./images/person_1.jpg"
+                srcset="
+                  ./images/team/person_1.jpg    1x,
+                  ./images/team/person_1@2x.jpg 2x
+                "
+                src="./images/team/person_1.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -246,7 +267,11 @@
             </li>
             <li class="list-back">
               <img
-                src="./images/person_2.jpg"
+                srcset="
+                  ./images/team/person_2.jpg    1x,
+                  ./images/team/person_2@2x.jpg 2x
+                "
+                src="./images/team/person_2.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -290,7 +315,11 @@
             </li>
             <li class="list-back">
               <img
-                src="./images/person_3.jpg"
+                srcset="
+                  ./images/team/person_3.jpg    1x,
+                  ./images/team/person_3@2x.jpg 2x
+                "
+                src="./images/team/person_3.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -385,6 +414,7 @@
         </div>
       </section>
     </main>
+
     <footer class="foo">
       <div class="container footer">
         <div class="logo-container container">
@@ -450,9 +480,10 @@
         </div>
       </div>
     </footer>
+
     <div class="modal-window-container is-hidden" data-modal>
       <div class="modal-window">
-        <button type="button" class="modal-btn" data-modal-close>
+        <button type="button" class="close-btn" data-modal-close>
           <svg class="modal-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -522,7 +553,7 @@
             />
             <label class="checkbox-label" for="user-privacy">
               <span class="label-span">
-                <svg class="checkbox-icon" width="10" height="8">
+                <svg class="checkbox-icon" width="16" height="16">
                   <use href="./images/icons.svg#icon-property"></use>
                 </svg>
               </span>
@@ -534,6 +565,71 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <div class="menu-modal js-menu-container is-open" id="mobile-menu">
+      <div class="mobile-menu-container">
+        <div class="high-part">
+          <button class="close-btn menu-toggle js-close-menu" type="button">
+            <svg class="modal-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mobile-nav list">
+              <li class="mobile-nav-item">
+                <a class="menu-nav link" href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="menu-nav link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="menu-nav link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="low-part">
+          <a class="menu-phone link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+          <a class="menu-email link" href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
+          <div class="menu-icon-block">
+            <ul class="menu-icon-list list">
+              <li class="menu-item">
+                <a class="menu-icon-link" href="">
+                  <svg class="media-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-icon-link" href="">
+                  <svg class="media-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-icon-link" href="">
+                  <svg class="media-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-icon-link" href="">
+                  <svg class="media-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin-logo"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
